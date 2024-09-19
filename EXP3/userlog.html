@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+</head>
+<body>
+    
+    <center>
+        <h1>User Login</h1>    
+    </center>
+    <hr>
+    <br>
+    <br>
+    <center>
+    <form onsubmit="return validate1()">
+        <table>
+            
+            <tr>
+            <td>Email</td>
+            <td>
+                <input type="email" placeholder="Enter your email" id="two" required>
+            </td>
+        </tr>
+
+            <tr> 
+                <td>Password</td>
+                <td><input type="password" placeholder="Enter your password" id="t"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Submit" onclick="validate1()"></td>
+                <td><input type="reset" value="Reset"></td>
+            </tr>
+        </table>
+    </form>
+    </center>
+    
+    
+    <script src="scr.js"></script>
+</body>
+</html>

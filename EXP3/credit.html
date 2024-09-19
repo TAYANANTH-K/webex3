@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit card details</title>
+</head>
+<body>
+    <center>git 
+    <form onsubmit="return redirectToPage()">
+        <table>
+            <tr>
+                <td>Card No</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>Expiry Month</td>
+                <td> 
+                    <select>
+                        <option>Select Month</option>
+                        <option>Jan</option>
+                        <option>Feb</option>
+                        <option>Mar</option>
+                        <option>Jun</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>CVV</td>
+                <td><input type="text" maxlength="3" pattern="\d{3}" required></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+    </center>
+
+    <script>
+        function redirectToPage() {
+           
+            alert("Form submitted!");
+
+         
+            window.location.href = "fd.html";
+            return false; 
+        }
+    </script>
+</body>
+</html>
